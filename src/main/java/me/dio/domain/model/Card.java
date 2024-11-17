@@ -13,30 +13,18 @@ public class Card {
     @Column(unique = true)
     private String number;
 
-    @Column(name = "available_limit", scale = 13, precision = 2)
+    @Column(name = "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() {return id;}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) {this.id = id;}
 
-    public String getNumber() {
-        return number;
-    }
+    public String getNumber() {return number;}
 
-    public void setNumber(String number) {
-        this.number = number;
-    }
+    public void setNumber(String number) {this.number = number;}
 
-    public BigDecimal getLimit() {
-        return limit;
-    }
+    public BigDecimal getLimit() {return limit;}
 
-    public void setLimit(BigDecimal limit) {
-        this.limit = limit;
-    }
+    public void setLimit(BigDecimal limit) {this.limit = limit;}
 }
